@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef6ff;
+    color: #222;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.search {
+    display: flex;
+    max-width: 650px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.search input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button {
+    padding: 14px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#error {
+    text-align: center;
+    color: #dc2626;
+    min-height: 25px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px #d0d0d0;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 75px;
+    margin: 15px;
+}
+
+#temperature {
+    font-size: 40px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info p {
+    margin: 8px;
+}
+
+.forecast-card {
+    margin-top: 20px;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.forecast-day {
+    background: #f1f5f9;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.forecast-day .icon {
+    font-size: 35px;
+    margin: 10px;
+}
+
+#travelTips {
+    margin-top: 20px;
+}
+
+.tip {
+    padding: 10px;
+    margin: 8px 0;
+    background: #f1f5f9;
+    border-radius: 7px;
+}
+
+@media (max-width: 700px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
